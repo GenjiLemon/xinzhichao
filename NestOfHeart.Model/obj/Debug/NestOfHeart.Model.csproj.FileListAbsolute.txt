@@ -1,0 +1,17 @@
+F:\心之巢\网站建设\NestOfHeart.Model\bin\Debug\NestOfHeart.Model1.dll.config
+F:\心之巢\网站建设\NestOfHeart.Model\bin\Debug\NestOfHeart.Model1.dll
+F:\心之巢\网站建设\NestOfHeart.Model\bin\Debug\NestOfHeart.Model1.pdb
+F:\心之巢\网站建设\NestOfHeart.Model\bin\Debug\EntityFramework.dll
+F:\心之巢\网站建设\NestOfHeart.Model\bin\Debug\EntityFramework.SqlServer.dll
+F:\心之巢\网站建设\NestOfHeart.Model\bin\Debug\EntityFramework.xml
+F:\心之巢\网站建设\NestOfHeart.Model\bin\Debug\EntityFramework.SqlServer.xml
+F:\心之巢\网站建设\NestOfHeart.Model\bin\Debug\zh-Hans\EntityFramework.resources.dll
+F:\心之巢\网站建设\NestOfHeart.Model\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+F:\心之巢\网站建设\NestOfHeart.Model\obj\Debug\NestOfHeart.Model.csprojAssemblyReference.cache
+F:\心之巢\网站建设\NestOfHeart.Model\obj\Debug\NestOfHeart.Model.Migrations.firstentity.resources
+F:\心之巢\网站建设\NestOfHeart.Model\obj\Debug\NestOfHeart.Model.Migrations.firstentityfull.resources
+F:\心之巢\网站建设\NestOfHeart.Model\obj\Debug\NestOfHeart.Model.csproj.GenerateResource.cache
+F:\心之巢\网站建设\NestOfHeart.Model\obj\Debug\NestOfHeart.Model.csproj.CoreCompileInputs.cache
+F:\心之巢\网站建设\NestOfHeart.Model\obj\Debug\NestOfHeart.Model.csproj.CopyComplete
+F:\心之巢\网站建设\NestOfHeart.Model\obj\Debug\NestOfHeart.Model1.dll
+F:\心之巢\网站建设\NestOfHeart.Model\obj\Debug\NestOfHeart.Model1.pdb

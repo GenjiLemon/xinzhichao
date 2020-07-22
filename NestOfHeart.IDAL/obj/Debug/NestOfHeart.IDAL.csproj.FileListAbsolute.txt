@@ -1,0 +1,13 @@
+F:\心之巢\网站建设\NestOfHeart.IDAL\bin\Debug\NestOfHeart.IDAL1.dll
+F:\心之巢\网站建设\NestOfHeart.IDAL\bin\Debug\NestOfHeart.IDAL1.pdb
+F:\心之巢\网站建设\NestOfHeart.IDAL\bin\Debug\NestOfHeart.Model1.dll
+F:\心之巢\网站建设\NestOfHeart.IDAL\bin\Debug\EntityFramework.dll
+F:\心之巢\网站建设\NestOfHeart.IDAL\bin\Debug\NestOfHeart.Model1.pdb
+F:\心之巢\网站建设\NestOfHeart.IDAL\bin\Debug\NestOfHeart.Model1.dll.config
+F:\心之巢\网站建设\NestOfHeart.IDAL\bin\Debug\EntityFramework.xml
+F:\心之巢\网站建设\NestOfHeart.IDAL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+F:\心之巢\网站建设\NestOfHeart.IDAL\obj\Debug\NestOfHeart.IDAL.csprojAssemblyReference.cache
+F:\心之巢\网站建设\NestOfHeart.IDAL\obj\Debug\NestOfHeart.IDAL.csproj.CoreCompileInputs.cache
+F:\心之巢\网站建设\NestOfHeart.IDAL\obj\Debug\NestOfHeart.IDAL.csproj.CopyComplete
+F:\心之巢\网站建设\NestOfHeart.IDAL\obj\Debug\NestOfHeart.IDAL1.dll
+F:\心之巢\网站建设\NestOfHeart.IDAL\obj\Debug\NestOfHeart.IDAL1.pdb
