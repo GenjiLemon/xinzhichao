@@ -7,5 +7,8 @@ namespace NestOfHeart.DAL
         public UserService(dbContext db) : base(db)
         {
         }
+        public UserService()
+        {
+        }
     }
 }

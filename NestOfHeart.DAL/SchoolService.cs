@@ -6,5 +6,6 @@ namespace NestOfHeart.DAL
         public SchoolService(dbContext db) : base(db)
         {
         }
+        public SchoolService() { }
     }
 }

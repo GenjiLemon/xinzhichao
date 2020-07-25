@@ -7,5 +7,6 @@ namespace NestOfHeart.DAL
         public MovieService(dbContext db) : base(db)
         {
         }
+        public MovieService() { }
     }
 }

@@ -6,7 +6,12 @@ namespace NestOfHeart.DAL
 {
     public class BaseService<T>: IDAL.IBaseService<T> where T:Model.BaseEntity,new()
     {
-        private readonly dbContext db;
+        protected readonly dbContext db = new dbContext();
+
+        public BaseService()
+        {
+
+        }
         public BaseService(dbContext db)
         {
             this.db = db;

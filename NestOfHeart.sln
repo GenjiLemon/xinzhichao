@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NestOfHeart.IDAL", "NestOfH
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NestOfHeart.DAL", "NestOfHeart.DAL\NestOfHeart.DAL.csproj", "{FE5767B6-20E3-4D16-AE93-E91C879E2A0B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NestOfHeart.IBLL", "NestOfHeart.IBLL\NestOfHeart.IBLL.csproj", "{40FCC173-C531-4FCF-8247-1E2BCF4F36D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NestOfHeart.Dto", "NestOfHeart.Dto\NestOfHeart.Dto.csproj", "{A9BCDF0E-246B-4442-B6AB-066085E32143}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{FE5767B6-20E3-4D16-AE93-E91C879E2A0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE5767B6-20E3-4D16-AE93-E91C879E2A0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE5767B6-20E3-4D16-AE93-E91C879E2A0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40FCC173-C531-4FCF-8247-1E2BCF4F36D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40FCC173-C531-4FCF-8247-1E2BCF4F36D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40FCC173-C531-4FCF-8247-1E2BCF4F36D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40FCC173-C531-4FCF-8247-1E2BCF4F36D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9BCDF0E-246B-4442-B6AB-066085E32143}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9BCDF0E-246B-4442-B6AB-066085E32143}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9BCDF0E-246B-4442-B6AB-066085E32143}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9BCDF0E-246B-4442-B6AB-066085E32143}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

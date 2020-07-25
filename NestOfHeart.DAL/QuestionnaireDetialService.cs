@@ -6,5 +6,6 @@ namespace NestOfHeart.DAL
         public QuestionnaireDetialService(dbContext db) : base(db)
         {
         }
+        public QuestionnaireDetialService() { }
     }
 }

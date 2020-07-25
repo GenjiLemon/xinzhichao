@@ -4,9 +4,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace NestOfHeart.Model
 {
-    public class Class:BaseEntity
+    public class Class : BaseEntity
     {
-       [Required]
+        [Required]
         public string Name { get; set; }
         /// <summary>
         ///毕业年
@@ -18,6 +18,13 @@ namespace NestOfHeart.Model
         [ForeignKey(nameof(Teacher))]
         public Guid TeacherId { get; set; }
         public Teacher Teacher { get; set; }
-
+        [NotMapped]
+        public bool IsGraduated
+        {
+            get
+            {
+                return DateTime.Now.Year > GraduationYear;
+            }
+        }
     }
 }

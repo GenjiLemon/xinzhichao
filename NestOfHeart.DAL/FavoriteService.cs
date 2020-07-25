@@ -7,5 +7,6 @@ namespace NestOfHeart.DAL
         public FavoriteService(dbContext db) : base(db)
         {
         }
+        public FavoriteService() { }
     }
 }

@@ -6,5 +6,6 @@ namespace NestOfHeart.DAL
         public QuestionService(dbContext db) : base(db)
         {
         }
+        public QuestionService() { }
     }
 }

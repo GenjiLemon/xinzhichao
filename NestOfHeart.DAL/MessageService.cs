@@ -7,5 +7,6 @@ namespace NestOfHeart.DAL
         public MessageService(dbContext db) : base(db)
         {
         }
+        public MessageService() { }
     }
 }

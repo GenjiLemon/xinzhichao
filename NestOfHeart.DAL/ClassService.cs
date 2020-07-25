@@ -7,5 +7,6 @@ namespace NestOfHeart.DAL
         public ClassService(dbContext db) : base(db)
         {
         }
+        public ClassService() { }
     }
 }

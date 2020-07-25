@@ -6,5 +6,6 @@ namespace NestOfHeart.DAL
         public StudentMovieService(dbContext db) : base(db)
         {
         }
+        public StudentMovieService() { }
     }
 }

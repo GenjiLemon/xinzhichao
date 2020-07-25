@@ -6,5 +6,6 @@ namespace NestOfHeart.DAL
         public NoteService(dbContext db) : base(db)
         {
         }
+        public NoteService() { }
     }
 }

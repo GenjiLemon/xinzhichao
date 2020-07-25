@@ -7,5 +7,6 @@ namespace NestOfHeart.DAL
         public WeeklyService(dbContext db) : base(db)
         {
         }
+        public WeeklyService() { }
     }
 }
