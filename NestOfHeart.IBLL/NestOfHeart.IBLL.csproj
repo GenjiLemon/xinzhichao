@@ -41,9 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MessageManager.cs" />
+    <Compile Include="IFavoriteManager.cs" />
+    <Compile Include="IMessageManager.cs" />
+    <Compile Include="IMovieManager.cs" />
+    <Compile Include="INoteManager.cs" />
+    <Compile Include="IWeeklyManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserManager.cs" />
+    <Compile Include="IUserManager.cs" />
+    <Compile Include="IQuestionnaireManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NestOfHeart.Dto\NestOfHeart.Dto.csproj">
@@ -53,10 +58,6 @@
     <ProjectReference Include="..\NestOfHeart.IDAL\NestOfHeart.IDAL.csproj">
       <Project>{5dc20e0e-2d73-4cd6-9276-d5425739f909}</Project>
       <Name>NestOfHeart.IDAL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\NestOfHeart.Model\NestOfHeart.Model.csproj">
-      <Project>{C2FAF06C-B8A1-4A0C-90EC-39AD3D9373E0}</Project>
-      <Name>NestOfHeart.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

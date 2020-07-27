@@ -1,4 +1,6 @@
-﻿using NestOfHeart.Model;
+﻿using System;
+using System.Linq;
+using NestOfHeart.Model;
 
 namespace NestOfHeart.DAL
 {
@@ -9,6 +11,18 @@ namespace NestOfHeart.DAL
         }
         public UserService()
         {
+        }
+
+        public Guid GetIdByUsername(string username)
+        {
+            return GetAll().First(m => m.Username == username).Id;
+
+        }
+        
+
+        public User GetOneByUsername(string username)
+        {
+            return GetAll().First(m => m.Username == username);
         }
     }
 }

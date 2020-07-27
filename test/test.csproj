@@ -58,9 +58,21 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\NestOfHeart.BLL\NestOfHeart.BLL.csproj">
+      <Project>{2b7d6043-31ed-4230-8fe1-69c61248e768}</Project>
+      <Name>NestOfHeart.BLL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\NestOfHeart.DAL\NestOfHeart.DAL.csproj">
       <Project>{fe5767b6-20e3-4d16-ae93-e91c879e2a0b}</Project>
       <Name>NestOfHeart.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NestOfHeart.Dto\NestOfHeart.Dto.csproj">
+      <Project>{a9bcdf0e-246b-4442-b6ab-066085e32143}</Project>
+      <Name>NestOfHeart.Dto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NestOfHeart.IBLL\NestOfHeart.IBLL.csproj">
+      <Project>{40fcc173-c531-4fcf-8247-1e2bcf4f36d4}</Project>
+      <Name>NestOfHeart.IBLL</Name>
     </ProjectReference>
     <ProjectReference Include="..\NestOfHeart.IDAL\NestOfHeart.IDAL.csproj">
       <Project>{5dc20e0e-2d73-4cd6-9276-d5425739f909}</Project>

@@ -8,7 +8,7 @@ namespace NestOfHeart.Dto
 {
     public class TeacherDto:UserDto
     {
-        
+        public Guid TeacherId { get; set; }
         public List<string> ClassNames { get; set; }
 
     }

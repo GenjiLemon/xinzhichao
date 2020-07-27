@@ -2,6 +2,8 @@
 using System;
 using System.Linq;
 using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
+
 namespace NestOfHeart.DAL
 {
     public class BaseService<T>: IDAL.IBaseService<T> where T:Model.BaseEntity,new()
@@ -29,7 +31,7 @@ namespace NestOfHeart.DAL
             db.SaveChanges();
             db.Configuration.ValidateOnSaveEnabled = true;
         }
-      
+        
 
         public void Remove(Guid id)
         {

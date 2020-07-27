@@ -6,6 +6,7 @@ namespace NestOfHeart.IDAL
     {
         void Add(T t);
         void Edit(T t);
+        
         void Remove(Guid id);
         void Remove(T model);
         T GetOne(Guid id);

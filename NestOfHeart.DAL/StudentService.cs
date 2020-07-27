@@ -14,5 +14,6 @@ namespace NestOfHeart.DAL
             db.SaveChanges();
             return t.Id;
         }
+        public StudentService() { }
     }
 }

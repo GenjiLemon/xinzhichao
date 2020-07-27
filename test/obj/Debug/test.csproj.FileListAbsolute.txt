@@ -19,3 +19,9 @@ F:\心之巢\网站建设\test\bin\Debug\NestOfHeart.DAL1.pdb
 F:\心之巢\网站建设\test\bin\Debug\NestOfHeart.IDAL1.pdb
 F:\心之巢\网站建设\test\bin\Debug\NestOfHeart.Model1.pdb
 F:\心之巢\网站建设\test\bin\Debug\NestOfHeart.Model1.dll.config
+F:\心之巢\网站建设\test\bin\Debug\NestOfHeart.BLL.dll
+F:\心之巢\网站建设\test\bin\Debug\NestOfHeart.Dto.dll
+F:\心之巢\网站建设\test\bin\Debug\NestOfHeart.IBLL.dll
+F:\心之巢\网站建设\test\bin\Debug\NestOfHeart.BLL.pdb
+F:\心之巢\网站建设\test\bin\Debug\NestOfHeart.Dto.pdb
+F:\心之巢\网站建设\test\bin\Debug\NestOfHeart.IBLL.pdb
