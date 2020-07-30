@@ -15,3 +15,4 @@ F:\心之巢\网站建设\NestOfHeart.Model\obj\Debug\NestOfHeart.Model.csproj.C
 F:\心之巢\网站建设\NestOfHeart.Model\obj\Debug\NestOfHeart.Model1.dll
 F:\心之巢\网站建设\NestOfHeart.Model\obj\Debug\NestOfHeart.Model1.pdb
 F:\心之巢\网站建设\NestOfHeart.Model\obj\Debug\NestOfHeart.Model.Migrations.updateteacher.resources
+F:\心之巢\网站建设\NestOfHeart.Model\obj\Debug\NestOfHeart.Model.csprojAssemblyReference.cache

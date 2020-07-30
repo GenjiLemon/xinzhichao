@@ -15,6 +15,6 @@ namespace NestOfHeart.Model
         /// <summary>
         /// 是否已读
         /// </summary>
-        public bool IsRead { get; set; }
+        public bool IsRead { get; set; } = false;
     }
 }

@@ -8,7 +8,7 @@ namespace NestOfHeart.Dto
 {
     public class NoteDto
     {
-        public string UserName { get; set; }
+        public string StudentName { get; set; }
         public string Content { get; set; }
 
     }

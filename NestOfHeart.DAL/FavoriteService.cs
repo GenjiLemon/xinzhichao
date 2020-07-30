@@ -1,4 +1,7 @@
-﻿using NestOfHeart.Model;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using NestOfHeart.Model;
 
 namespace NestOfHeart.DAL
 {
@@ -8,5 +11,10 @@ namespace NestOfHeart.DAL
         {
         }
         public FavoriteService() { }
+
+        public List<Favorite> GetUserFavorite(Guid userid)
+        {
+            return GetAllOrder().Where(m => m.UserId == userid).ToList();
+        }
     }
 }

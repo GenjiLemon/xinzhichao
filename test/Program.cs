@@ -15,10 +15,20 @@ namespace test
         
         static void Main(string[] args)
         {
-            NestOfHeart.BLL.UserManager um = new NestOfHeart.BLL.UserManager();
-            um.ChangePassword("fay", "fay2","fay1");
 
-
+            List<int> testList = new List<int>();
+            testList.Add(2);
+            testList.Add(1);
+            testList.Add(3);
+            testList.Add(4);
+            testList.Add(5);
+            testList.Add(0);
+            
+            foreach(int i in testList)
+            {
+                Console.Write(i);
+            }
+            Console.Read();
 
         }
     }

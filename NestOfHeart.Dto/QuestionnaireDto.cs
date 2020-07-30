@@ -14,7 +14,7 @@ namespace NestOfHeart.Dto
         /// 使用人数
         /// </summary>
         public int PeopleNum { get; set; }
-        public Guid QuestionId { get; set; }
+        public Guid QuestionnaireId { get; set; }
         public List<QuestionDto> QuestionList { get; set; }
     }
 }

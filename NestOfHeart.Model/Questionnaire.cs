@@ -15,7 +15,7 @@ namespace NestOfHeart.Model
         [StringLength(50)]
         public string Brief { get; set; }
         /// <summary>
-        /// 类型：1学生自主，2老师选用，3都在
+        /// 类型：1学生自主，2老师选用
         /// </summary>
         [Required]
         public int Type { get; set; }

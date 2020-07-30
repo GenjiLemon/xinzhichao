@@ -8,10 +8,10 @@ namespace NestOfHeart.IBLL
 {
     public interface INoteManager
     {
-        void AddNote(string username, string content, int Permission);
+        void AddNote(string username, string content, int permission);
         List<Dto.NoteDto> GetAllNote();
         List<Dto.NoteDto> GetUserNote(string username);
-        List<Dto.NoteDto> GetPermissionNote();
+        List<Dto.NoteDto> GetPermissionNote(string username);
         
     }
 }

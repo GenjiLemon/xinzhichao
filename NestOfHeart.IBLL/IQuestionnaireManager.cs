@@ -12,14 +12,18 @@ namespace NestOfHeart.IBLL
         ///  类型：1学生自主，2老师选用，3都在
         /// </summary>
         /// <param name="type">
-        List<Dto.QuestionDto> GetQuestionList(int type);
-        void AddQuestionnair(Dto.QuestionnaireDto questionnair);
-        Dto.QuestionnaireDto Questionnaire(Guid QuestionId);
-        Guid BeginQuestionnaire(Guid QuestionId);//返回QuestionnaireDetaiId
+       
+        Guid AddQuestionnair(string name, string brief,int type);
+        void AddQuestion(Guid questionnaireid, int order, string title, string choice, int type);
+        Dto.QuestionnaireDto GetQuestionnaire(Guid QuestionnaireId);
+        List<Dto.QuestionnaireDto> GetTeacherQuestionnaireList();
+        List<Dto.QuestionnaireDto> GetStudentQuestionnaireList();
+        Guid BeginQuestionnaire(Guid QuestionaireId, string username);//返回QuestionnaireDetaiId
+        void BeginQuestionnaireFromTeacher(Guid questionnairedetailid);
         bool IsInAnswer(string username);
-        void StartQuestionnaire(Guid QuestionnaireDetaiId);
+        void StopQuestionnaire(Guid QuestionnaireDetaiId, float score);
         Dto.QuestionnaireDetailDto GetQuestionnaireDetail(Guid QuestionnaireDetaiId);
         List<Dto.QuestionnaireDetailDto> GetStudentQuestionnaireDetail(string username);
-        List<Dto.QuestionnaireDetailDto> GetClassQuestionnaireDetail(string classname);
+       // List<Dto.QuestionnaireDetailDto> GetClassQuestionnaireDetail(string classname);
     }
 }

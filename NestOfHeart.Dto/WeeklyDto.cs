@@ -10,6 +10,9 @@ namespace NestOfHeart.Dto
     {
         public string Title { get; set; }
         public string Content { get; set; }
-
+        /// <summary>
+        /// 日期
+        /// </summary>
+        public DateTime Date { get; set; }
     }
 }
