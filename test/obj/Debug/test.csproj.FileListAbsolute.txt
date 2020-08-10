@@ -25,3 +25,6 @@ F:\心之巢\网站建设\test\bin\Debug\NestOfHeart.IBLL.dll
 F:\心之巢\网站建设\test\bin\Debug\NestOfHeart.BLL.pdb
 F:\心之巢\网站建设\test\bin\Debug\NestOfHeart.Dto.pdb
 F:\心之巢\网站建设\test\bin\Debug\NestOfHeart.IBLL.pdb
+E:\心之巢\test\bin\Debug\test.exe.config
+E:\心之巢\test\obj\Debug\test.exe
+E:\心之巢\test\obj\Debug\test.pdb
