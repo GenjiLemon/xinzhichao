@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using NestOfHeart.DAL;
 using NestOfHeart.IDAL;
 using NestOfHeart.Model;
+
+
 namespace test
 {
     
@@ -16,19 +18,9 @@ namespace test
         static void Main(string[] args)
         {
 
-            List<int> testList = new List<int>();
-            testList.Add(2);
-            testList.Add(1);
-            testList.Add(3);
-            testList.Add(4);
-            testList.Add(5);
-            testList.Add(0);
-            
-            foreach(int i in testList)
-            {
-                Console.Write(i);
-            }
-            Console.Read();
+            NestOfHeart.IBLL.IUserManager UserMgr = new NestOfHeart.BLL.UserManager();
+            UserMgr.Register("fay", "fay123", 2);
+            UserMgr.Register("cjl", "cjl123", 1);
 
         }
     }

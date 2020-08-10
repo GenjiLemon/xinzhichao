@@ -9,7 +9,7 @@ using NestOfHeart.IDAL;
 using NestOfHeart.DAL;
 namespace NestOfHeart.BLL
 {
-    class FavoriteManager : IBLL.IFavoriteManager
+    public class FavoriteManager : IBLL.IFavoriteManager
     {
         public void AddFavorite(string username, string title, string url)
         {

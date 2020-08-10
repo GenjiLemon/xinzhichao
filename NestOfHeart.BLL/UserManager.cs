@@ -64,13 +64,7 @@ namespace NestOfHeart.BLL
                         Model.Teacher tea=teaSvc.GetOne(u.DetailId);
                         temp_tea.Name = tea.Name;
                         temp_tea.TeacherId = tea.Id;
-                        using (IClassService classSvc=new ClassService())
-                        {   //循环把每个class的name方到classnames里面
-                            foreach(Model.Class t in classSvc.GetClassesByTeacherid(temp_tea.TeacherId))
-                            {
-                                temp_tea.ClassNames.Add(t.Name);
-                            }
-                        }
+                        
                         user = temp_tea;
                     }
                 }
@@ -79,7 +73,7 @@ namespace NestOfHeart.BLL
             
         }
 
-     
+        
 
         public bool Login(string username, string password)
         {
@@ -100,7 +94,16 @@ namespace NestOfHeart.BLL
             }
             
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="username"></param>
+        /// <param name="password"></param>
+        /// <param name="identity">1学生2老师</param>
+        /// <param name="name"></param>
+        /// <param name="tel"></param>
+        /// <param name="email"></param>
+        /// <param name="classname"></param>
         public void Register(string username, string password, int identity, string name = null, string tel = null, string email = null, string classname = null)
         {
             Model.User u = new Model.User()

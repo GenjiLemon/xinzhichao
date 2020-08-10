@@ -9,7 +9,7 @@ using NestOfHeart.IDAL;
 using NestOfHeart.DAL;
 namespace NestOfHeart.BLL
 {
-    class NoteManager : IBLL.INoteManager
+    public class NoteManager : IBLL.INoteManager
     {
         public void AddNote(string username, string content, int permission)
         {

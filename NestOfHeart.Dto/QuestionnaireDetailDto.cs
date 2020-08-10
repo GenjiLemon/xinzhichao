@@ -10,7 +10,7 @@ namespace NestOfHeart.Dto
     {
         public Guid StudentId { get; set; }
         public string StudentName { get; set; }
-        public QuestionnaireDto Questionnaire { get; set; }
+        public Guid QuestionnaireId { get; set; }
         public DateTime FinishTime { get; set; }
         public float Score { get; set; }
 

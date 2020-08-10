@@ -1,6 +1,5 @@
 F:\心之巢\网站建设\NestOfHeart.Dto\bin\Debug\NestOfHeart.Dto.dll
 F:\心之巢\网站建设\NestOfHeart.Dto\bin\Debug\NestOfHeart.Dto.pdb
-F:\心之巢\网站建设\NestOfHeart.Dto\obj\Debug\NestOfHeart.Dto.csprojAssemblyReference.cache
 F:\心之巢\网站建设\NestOfHeart.Dto\obj\Debug\NestOfHeart.Dto.csproj.CoreCompileInputs.cache
 F:\心之巢\网站建设\NestOfHeart.Dto\obj\Debug\NestOfHeart.Dto.dll
 F:\心之巢\网站建设\NestOfHeart.Dto\obj\Debug\NestOfHeart.Dto.pdb

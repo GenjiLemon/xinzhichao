@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClassDto.cs" />
     <Compile Include="FavoriteDto.cs" />
     <Compile Include="MessageDto.cs" />
     <Compile Include="MovieDto.cs" />

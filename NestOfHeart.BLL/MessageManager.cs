@@ -9,7 +9,7 @@ using NestOfHeart.IDAL;
 using NestOfHeart.DAL;
 namespace NestOfHeart.BLL
 {
-    class MessageManager : IBLL.IMessageManager
+    public class MessageManager : IBLL.IMessageManager
     {
         public void CreateMessage(string username, string content, string title = "系统消息")
         {

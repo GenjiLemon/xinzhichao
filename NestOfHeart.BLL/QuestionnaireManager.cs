@@ -9,7 +9,7 @@ using NestOfHeart.IDAL;
 using NestOfHeart.DAL;
 namespace NestOfHeart.BLL
 {
-    class QuestionnaireManager : IBLL.IQuestionnaireManager
+    public class QuestionnaireManager : IBLL.IQuestionnaireManager
     {
         //返回questionnaireid,type1是给学生自主用2是老师用
         public Guid AddQuestionnair(string name,string brief,int type)
@@ -180,7 +180,7 @@ namespace NestOfHeart.BLL
                     Score=qstnd.Score,
                     StudentId=qstnd.StudentId,
                     StudentName=qstnd.Student.Name,
-                    Questionnaire=GetQuestionnaire(qstnd.QuestionnaireId)//通过bll的函数来获得dto
+                    QuestionnaireId= qstnd.QuestionnaireId//通过bll的函数来获得dto
                 };
             }
         }
@@ -200,7 +200,7 @@ namespace NestOfHeart.BLL
                         StudentId = stu.StudentId,
                         StudentName = stu.Name,
                         FinishTime = i.FinishTime,
-                        Questionnaire = GetQuestionnaire(i.QuestionnaireId)
+                        QuestionnaireId = i.QuestionnaireId
                     });
                 }
             return res;

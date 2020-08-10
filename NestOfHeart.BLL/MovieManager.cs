@@ -9,7 +9,7 @@ using NestOfHeart.IDAL;
 using NestOfHeart.DAL;
 namespace NestOfHeart.BLL
 {
-    class MovieManager : IBLL.IMovieManager
+    public class MovieManager : IBLL.IMovieManager
     {
         public void AddMovie(string name, string url = "", string brief = "")
         {
