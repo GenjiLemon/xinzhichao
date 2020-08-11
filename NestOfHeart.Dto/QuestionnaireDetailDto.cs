@@ -8,6 +8,7 @@ namespace NestOfHeart.Dto
 {
     public class QuestionnaireDetailDto
     {
+        public Guid QuestionnaireDetailId { get; set; }
         public Guid StudentId { get; set; }
         public string StudentName { get; set; }
         public Guid QuestionnaireId { get; set; }

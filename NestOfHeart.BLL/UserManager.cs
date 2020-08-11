@@ -21,13 +21,12 @@ namespace NestOfHeart.BLL
                 userSvc.Edit(user);
             }
         }
-       
-        public UserDto GetUser(string username)
+       public UserDto GetUser(Guid userid)
         {
             using (IUserService userSvc = new UserService())
             {
-                Model.User u = userSvc.GetOne(userSvc.GetIdByUsername(username));
-                UserDto user=null;
+                Model.User u = userSvc.GetOne(userid);
+                UserDto user = null;
                 //根据类型创建对应的dto
                 if (u.Identity == 1)
                 {
@@ -43,7 +42,7 @@ namespace NestOfHeart.BLL
                         Model.Student stu = stuSvc.GetOne(u.DetailId);
                         temp_stu.Name = stu.Name;
                         temp_stu.StudentId = stu.Id;
-                        using(IClassService classSvc=new ClassService())
+                        using (IClassService classSvc = new ClassService())
                         {
                             temp_stu.ClassName = classSvc.GetOne(stu.ClassId).Name;
                         }
@@ -61,16 +60,22 @@ namespace NestOfHeart.BLL
                             UserId = u.Id
                         };
                         //根据DetailedId找到对应的teacher实体
-                        Model.Teacher tea=teaSvc.GetOne(u.DetailId);
+                        Model.Teacher tea = teaSvc.GetOne(u.DetailId);
                         temp_tea.Name = tea.Name;
                         temp_tea.TeacherId = tea.Id;
-                        
+
                         user = temp_tea;
                     }
                 }
                 return user;
             }
-            
+        }
+        public UserDto GetUser(string username)
+        {
+            using(IDAL.IUserService userSvc=new DAL.UserService())
+            {
+                return GetUser(userSvc.GetIdByUsername(username));
+            }
         }
 
         

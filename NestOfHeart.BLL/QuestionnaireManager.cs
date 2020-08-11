@@ -54,22 +54,7 @@ namespace NestOfHeart.BLL
                     PeopleNum=qstn.Count,
                     QuestionnaireId=qstn.Id
                 };
-                //获取每个question
-                using(IQuestionService qstSvc=new QuestionService())
-                {
-                    var list=qstSvc.GetQuestionsByQuestionnaireIdOrder(QuestionnaireId);
-                    foreach(var i in list)
-                    {
-                        //获取到的就是按照顺序的question
-                        res.QuestionList.Add(new QuestionDto()
-                        {
-                            Order=i.Order,
-                            Title=i.Title,
-                            Choice = i.Choice,
-                            Type=i.Type
-                        });
-                    }
-                }
+               
                 return res;
                 
             }
@@ -145,7 +130,7 @@ namespace NestOfHeart.BLL
                 qstndSvc.Edit(qstnd);
             }
         }
-        //注意接口的实现还没写
+        
         public bool IsInAnswer(string username)
         {
             StudentDto stu = (StudentDto)new UserManager().GetUser(username);
@@ -200,10 +185,54 @@ namespace NestOfHeart.BLL
                         StudentId = stu.StudentId,
                         StudentName = stu.Name,
                         FinishTime = i.FinishTime,
-                        QuestionnaireId = i.QuestionnaireId
+                        QuestionnaireId = i.QuestionnaireId,
+                        QuestionnaireDetailId=i.QuestionnaireId
                     });
                 }
             return res;
+            }
+        }
+
+        public List<QuestionDto> GetQuestionnaireQuestions(Guid QuestionnaireId)
+        {
+            var res = new List<QuestionDto>();
+            //获取每个question
+            using (IQuestionService qstSvc = new QuestionService())
+            {
+                var list = qstSvc.GetQuestionsByQuestionnaireIdOrder(QuestionnaireId);
+                foreach (var i in list)
+                {
+                    //获取到的就是按照顺序的question
+                    res.Add(new QuestionDto()
+                    {
+                        Order = i.Order,
+                        Title = i.Title,
+                        Choice = i.Choice,
+                        Type = i.Type
+                    });
+                }
+            }
+            return res;
+        }
+
+        public List<QuestionnaireDetailDto> GetStudentQuestionnaireDetailNotDone(Guid userid)
+        {
+            StudentDto studto=(StudentDto)new BLL.UserManager().GetUser(userid);
+            using (IQuestionnaireDetailService qstndSvc = new QuestionnaireDetailService())
+            {
+                List<QuestionnaireDetailDto> res = new List<QuestionnaireDetailDto>();
+                var list = qstndSvc.GetListByStudentIdStatus(studto.StudentId,1);
+                foreach (var i in list)
+                {
+                    res.Add(new QuestionnaireDetailDto()
+                    {
+                        QuestionnaireDetailId=i.QuestionnaireId,
+                        StudentId = studto.StudentId,
+                        StudentName = studto.Name,
+                        QuestionnaireId = i.QuestionnaireId
+                    });
+                }
+                return res;
             }
         }
 
@@ -231,10 +260,10 @@ namespace NestOfHeart.BLL
         //            }
         //            return res;
         //        }
-               
+
         //    } 
         //}
 
-        
+
     }
 }

@@ -15,6 +15,6 @@ namespace NestOfHeart.Dto
         /// </summary>
         public int PeopleNum { get; set; }
         public Guid QuestionnaireId { get; set; }
-        public List<QuestionDto> QuestionList { get; set; }
+        //public List<QuestionDto> QuestionList { get; set; }
     }
 }
